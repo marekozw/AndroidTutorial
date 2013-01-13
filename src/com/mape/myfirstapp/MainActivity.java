@@ -3,6 +3,7 @@ package com.mape.myfirstapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
@@ -27,8 +28,18 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
 		EditText editText = (EditText) findViewById(R.id.edit_message);
 		String message = editText.getText().toString();
-		intent.putExtra(EXTRA_MESSAGE, message);
+
+		Bundle displayMessageExtras = new Bundle();
+		displayMessageExtras.putCharSequence(EXTRA_MESSAGE, message);
+		intent.putExtras(displayMessageExtras);
 		startActivity(intent);
+	}
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		// TODO Auto-generated method stub
+		super.onSaveInstanceState(outState);
+		Log.d("key", "onSave");
 	}
 
 }
