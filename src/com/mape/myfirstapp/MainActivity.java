@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 
+import com.mape.myfirstapp.fragments.MainFragmentActivity;
+
 public class MainActivity extends Activity {
 	public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
@@ -33,6 +35,12 @@ public class MainActivity extends Activity {
 		displayMessageExtras.putCharSequence(EXTRA_MESSAGE, message);
 		intent.putExtras(displayMessageExtras);
 		startActivity(intent);
+	}
+
+	public void showFragmentActivity(View view) {
+		Intent fragmentActivityIntent = new Intent(this,
+				MainFragmentActivity.class);
+		startActivity(fragmentActivityIntent);
 	}
 
 	@Override

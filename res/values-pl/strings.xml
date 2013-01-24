@@ -9,4 +9,5 @@
     <string name="hello_world">Witaj świecie!</string>
     <string name="title_activity_display_message">Moja wiadomość</string>
 	<string name="show_dialog">Wyświetl okno dialogowe</string>
+	<string name="show_fragment_activity">Pokaż aktywnośc z Fragmentami</string>
 </resources>

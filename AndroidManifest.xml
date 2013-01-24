@@ -24,11 +24,15 @@
         </activity>
         <activity
             android:name="com.mape.myfirstapp.DisplayMessageActivity"
-            android:label="@string/title_activity_display_message" 
-            android:parentActivityName="com.mape.myfirstapp.MainActivity">
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="com.mape.myfirstapp.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mape.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.mape.myfirstapp.fragments.MainFragmentActivity"
+            android:label="@string/title_activity_main_fragment" >
         </activity>
     </application>
 

@@ -8,5 +8,8 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_display_message">My Message</string>
-	<string name="show_dialog">Show dialog</string>
+    <string name="show_dialog">Show dialog</string>
+    <string name="show_fragment_activity">Show Fragment activity</string>
+    <string name="title_activity_main_fragment">MainFragmentActivity</string>
+
 </resources>
